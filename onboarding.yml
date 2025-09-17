@@ -48,3 +48,10 @@ jobs:
           echo "🔁 Tribute Routing Activated"
           echo "Contributor: ${{ github.actor }}"
           echo "Override Clause: DCP-OVR-2025.0917.FT"
+- name: Push Changes
+  run: |
+    git config --global user.name "OnboardingBot"
+    git config --global user.email "onboarding@dallascode.org"
+    git add invocation_log.txt badges.txt
+    git commit -m "Auto-update: Invocation + Badge"
+    git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
