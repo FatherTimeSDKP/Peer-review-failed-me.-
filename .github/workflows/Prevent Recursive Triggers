@@ -1,0 +1,7 @@
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - invocation_log.txt
+      - badges.txt
