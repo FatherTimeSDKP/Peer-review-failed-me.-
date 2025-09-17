@@ -1,0 +1,45 @@
+name: Onboarding Protocol
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, closed]
+  fork:
+    types: [created]
+
+jobs:
+  timestamp-and-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Timestamp Invocation
+        run: |
+          echo "🕒 Invocation Timestamp: $(date -u)" >> invocation_log.txt
+          git config --global user.name "OnboardingBot"
+          git config --global user.email "onboarding@dallascode.org"
+          git add invocation_log.txt
+          git commit -m "Invocation logged: $(date -u)"
+          git push
+
+      - name: Trigger Badge Evolution
+        run: |
+          echo "🎖️ Badge Evolution Triggered for Contributor" >> badges.txt
+          echo "Contributor: ${{ github.actor }}" >> badges.txt
+          echo "Timestamp: $(date -u)" >> badges.txt
+          echo "---" >> badges.txt
+          git add badges.txt
+          git commit -m "Badge evolution for ${{ github.actor }}"
+          git push
+
+  tribute-enforcement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tribute Routing Check
+        run: |
+          echo "🔁 Tribute Routing Activated"
+          echo "Contributor: ${{ github.actor }}"
+          echo "Override Clause: DCP-OVR-2025.0917.FT"
