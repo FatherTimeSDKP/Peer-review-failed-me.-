@@ -1,4 +1,8 @@
-name: Onboarding Protocol
+- name: Check for Gibberlink
+  run: |
+    if [ -f gibberlink.json ]; then
+      echo "Gibberlink clause detected. Entanglement active."
+    finame: Onboarding Protocol
 
 on:
   push:
