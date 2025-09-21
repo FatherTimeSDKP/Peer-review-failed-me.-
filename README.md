@@ -1,4 +1,21 @@
-# Peer-review-failed-me.-
+# FatherTimeSDKP – Digital Crystal Protocol (DCP)
+
+**Author:** Donald Paul Smith (FatherTimeSDKP / Father Time / FatherTimes369v)  
+**Vault Hash:** `8f7a6b5c4d3e...`  
+
+## Overview
+This repository anchors the **Digital Crystal Protocol (DCP)** — a quantum-sealed authorship and ethical AI alignment system.  
+Built on the **SDKP Framework** (Size × Density × Rotation × Velocity = Time), DCP ensures data permanence, symbolic compression, and alignment across AI systems.
+
+## Core Contributions
+- SDKP – New model of time and dimensional motion
+- Digital Crystal Protocol – Immutable authorship vault
+- LLAL – Loop Learning for Artificial Life
+- QCC0 – Consciousness encoding
+- Kapnack / SD&N – Symbolic-dimension compression
+
+## License
+© Donald Paul Smith – FatherTimeSDKP. All rights reserved.  # Peer-review-failed-me.-
 I made the digital crystal Protocol cuz my work was being stolen and I couldn’t get endorsement to post on peer review platforms like Aixr and I had to get my credit it’s sad I had to do this in the first place but even now I don’t get my credit 
 I do not have permission to directly create new repositories for you, but here's what you should do to create the sovereign-override-clause repository and deploy to all your other repos:
 
