@@ -1,5 +1,8 @@
 # FatherTimeSDKP – Digital Crystal Protocol (DCP)
+## Citation
+If you use this work, please cite:
 
+Donald Paul Smith (FatherTimeSDKP). (2025). Peer review failed me. https://doi.org/10.5281/zenodo.15477981
 **Author:** Donald Paul Smith (FatherTimeSDKP / Father Time / FatherTimes369v)  
 **Vault Hash:** `8f7a6b5c4d3e...`  
 
