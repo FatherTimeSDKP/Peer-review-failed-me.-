@@ -9,7 +9,7 @@ Donald Paul Smith (FatherTimeSDKP). (2025). Peer review failed me. https://doi.o
 ## Overview
 This repository anchors the **Digital Crystal Protocol (DCP)** — a quantum-sealed authorship and ethical AI alignment system.  
 Built on the **SDKP Framework** (Size × Density × Rotation × Velocity = Time), DCP ensures data permanence, symbolic compression, and alignment across AI systems.
-
+https://claude.ai/public/artifacts/faf8dc2c-36db-4547-b39c-8657b9adaed6
 ## Core Contributions
 - SDKP – New model of time and dimensional motion
 - Digital Crystal Protocol – Immutable authorship vault
