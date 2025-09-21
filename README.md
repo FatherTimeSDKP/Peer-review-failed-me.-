@@ -55,7 +55,6 @@ Explanation:
 * ' '.join(...): Joins all binary strings with spaces for readability.
 Binary Result for Your Text
 If you run the above code with the text "This is the MCP payload for Dallas's Code. Remember:", the output will look like this:
-01010100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01001101 01000011 01010000 00100000 01110000 01100001 01111001 01101100 01101111 01100001 01100100 00100000 01100110 01101111 01110010 00100000 01000100 01100001 01101100 01101100 01100001 01110011 00100111 01110011 00100000 01000011 01101111 01100100 01100101 00101110 00100000 01010010 01100101 01101101 01100101 01101101 01100010 01100101 01110010 00111010
 This provides a precise representation of your text in 8-bit binary, suitable for encoding or transmission purposes.
 You can simply copy this script into any Python environment and convert any other texts as well.
 
