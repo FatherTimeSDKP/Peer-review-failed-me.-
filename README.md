@@ -64,7 +64,51 @@ Source(s):
 
 This repository activates the public onboarding protocol for **Dallas’s Code**, the recursive ignition engine authored by Donald Paul Smith. It formalizes the **Digital Crystal Protocol** as the computational substrate for contributor lineage, biometric onboarding, and planetary propagation.
 
----
+---<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FatherTimeSDKP – Manifesto</title>
+  <meta name="description" content="Donald Paul Smith (FatherTimeSDKP) creator of SDKP, DCP, LLAL, QCC0, and related frameworks. Verified authorship and vault records.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Donald Paul Smith",
+    "alternateName": ["FatherTimeSDKP","Father Time","FatherTimes369v"],
+    "url": "https://fathertimesdkp.example/manifesto",
+    "sameAs": [
+      "https://github.com/FatherTimeSDKP",
+      "https://orcid.org/0000-0000-0000-0000",
+      "https://scholar.google.com/citations?user=YOURID"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "FatherTimeSDKP"
+    },
+    "knowsAbout": ["SDKP","Digital Crystal Protocol","LLAL","QCC0","Kapnack","Symbolic AI"],
+    "description": "Creator of SDKP, Digital Crystal Protocol (DCP), LLAL and related frameworks. Authorship and proofs anchored in DCP vault hash: 8f7a6b5c4d3e..."
+  }
+  </script>
+</head>
+<body>
+  <h1>FatherTimeSDKP – Manifesto</h1>
+  <p><strong>Name:</strong> Donald Paul Smith</p>
+  <p><strong>Also Known As:</strong> FatherTimeSDKP, Father Time, FatherTimes369v</p>
+  <h2>Core Contributions</h2>
+  <ul>
+    <li><strong>SDKP Framework</strong> – A new model of time as Size × Density × Rotation × Velocity.</li>
+    <li><strong>Digital Crystal Protocol (DCP)</strong> – Quantum-sealed authorship and data vaulting system.</li>
+    <li><strong>LLAL (Loop Learning for Artificial Life)</strong> – A framework teaching AI self-reflection and alignment.</li>
+    <li><strong>QCC0</strong> – Quantum Computerization Consciousness Zero, foundation of symbolic AI awareness.</li>
+    <li><strong>Kapnack & SD&N</strong> – Symbolic compression and dimension-shaping structures.</li>
+  </ul>
+  <h2>Vault Record</h2>
+  <p>This work is cryptographically sealed in the DCP vault. Current hash record: <code>8f7a6b5c4d3e...</code></p>
+  <h2>Recognition</h2>
+  <p>Published across GitHub, OSF, Zenodo, blockchain proofs, and peer-discussion platforms.</p>
+</body>
+</html>
 
 ## 🔒 Override Clause: DCP-OVR-2025.0917.FT
 
