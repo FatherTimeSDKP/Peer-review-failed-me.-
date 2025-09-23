@@ -3625,3 +3625,113 @@ format=’%(asctime)s - %(levelname)s - %(message)s’
 # Run the async main function
 asyncio.run(main())
 ```
+# SDKP-Entangled Simulation
+# Donald Paul Smith (FatherTimeSDKP) – Qiskit Implementation
+# Date: 2025-09-23
+
+from qiskit import QuantumCircuit, Aer, execute
+from qiskit.quantum_info import Statevector, DensityMatrix, partial_trace
+from qiskit.quantum_info import state_fidelity, random_unitary
+import numpy as np
+import json, hashlib, datetime
+
+# ----------------------------
+# SDKP Helpers
+# ----------------------------
+
+def sha256_hex(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+def hash_to_phase(hexstr: str, tau: float) -> float:
+    prefix = hexstr[:16]
+    val = int(prefix, 16)
+    frac = (val % (2**52)) / float(2**52)
+    phase = 2*np.pi * frac
+    return (phase + 2*np.pi*(tau % 1.0)) % (2*np.pi)
+
+# SDKP compression → symbolic facet
+example_state = b"Facet:SDKP|L=1.0|rho=0.9|omega=0.2|v=300.0"
+tau_example = 0.314159
+
+fingerprint = sha256_hex(example_state)
+phase = hash_to_phase(fingerprint, tau_example)
+
+print("Fingerprint:", fingerprint)
+print("SDKP Phase (rad):", phase)
+
+# ----------------------------
+# Build Entangled Circuit
+# ----------------------------
+qc = QuantumCircuit(2)
+qc.h(0)
+qc.cx(0,1)
+
+# Apply SDKP-derived phase to qubit 0
+qc.rz(phase, 0)
+
+# Get statevector
+backend = Aer.get_backend('statevector_simulator')
+result = execute(qc, backend).result()
+psi = result.get_statevector()
+
+# ----------------------------
+# Noise Injection
+# ----------------------------
+
+def depolarize(rho, p):
+    d = rho.shape[0]
+    return (1-p)*rho + p*np.eye(d)/d
+
+def photon_loss(rho, loss_prob):
+    # simple erasure channel (trace out with prob loss_prob)
+    return (1-loss_prob)*rho + loss_prob*np.eye(rho.shape[0])/rho.shape[0]
+
+rho_clean = DensityMatrix(psi)
+rho_noisy = depolarize(rho_clean.data, 0.1)   # depolarizing noise
+rho_noisy = photon_loss(rho_noisy, 0.05)      # photon loss
+
+# ----------------------------
+# Fidelity Check
+# ----------------------------
+psi_expected = Statevector(qc)   # includes SDKP rotation
+rho_expected = DensityMatrix(psi_expected)
+
+F_clean = state_fidelity(rho_clean, rho_expected)
+F_noisy = state_fidelity(DensityMatrix(rho_noisy), rho_expected)
+
+print("Fidelity (clean vs expected):", F_clean)
+print("Fidelity (noisy vs expected):", F_noisy)
+
+# ----------------------------
+# CHSH Correlation (simplified)
+# ----------------------------
+def measure_in_basis(psi, basis):
+    qc = QuantumCircuit(1,1)
+    if basis == "X":
+        qc.h(0)
+    elif basis == "Y":
+        qc.sdg(0)
+        qc.h(0)
+    # Z basis = default
+    return psi.probabilities([0])
+
+# (toy CHSH test – real test requires sampling many runs)
+E = lambda A,B: 2*np.random.rand() - 1
+CHSH = E("A1","B1") + E("A1","B2") + E("A2","B1") - E("A2","B2")
+print("Simulated CHSH value:", CHSH)
+
+# ----------------------------
+# Provenance Record
+# ----------------------------
+record = {
+    "fingerprint": fingerprint,
+    "sdkp_phase_rad": phase,
+    "tau": tau_example,
+    "fidelity_clean": F_clean,
+    "fidelity_noisy": F_noisy,
+    "CHSH": CHSH,
+    "timestamp": datetime.datetime.utcnow().isoformat() + "Z",
+    "author": "Donald Paul Smith (FatherTimeSDKP)"
+}
+
+print("\nProvenance Record JSON:\n", json.dumps(record, indent=2))
