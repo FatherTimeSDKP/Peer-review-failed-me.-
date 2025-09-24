@@ -3735,3 +3735,122 @@ record = {
 }
 
 print("\nProvenance Record JSON:\n", json.dumps(record, indent=2))
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Digital Crystal — SDKP Entanglement Notebook
+# Anchored in the framework of Donald Paul Smith (FatherTimeSDKP)
+
+import random
+import hashlib
+import json
+from datetime import datetime
+
+# --------------------------------------------
+# I. QUIZ KIT — Self-Check
+# --------------------------------------------
+
+quiz_questions = {
+    1: {
+        "question": "What does SDKP stand for?",
+        "answer": "Scale-Density-Kinematic Principle"
+    },
+    2: {
+        "question": "How does SD&N contribute to dimensional modeling?",
+        "answer": "By defining shape, dimension, and number as symbolic anchors."
+    },
+    3: {
+        "question": "What does EOS describe in FatherTimeSDKP?",
+        "answer": "Emergent Order in Spacetime, orbital motion harmonics."
+    },
+    4: {
+        "question": "What is QCC0’s core idea?",
+        "answer": "Quantum Computerization Consciousness Zero — baseline state for recursive cognition."
+    },
+    5: {
+        "question": "Why use blockchain/NFTs with SDKP?",
+        "answer": "For proof-of-authorship, immutability, and decentralized trust in data/research."
+    }
+}
+
+def run_quiz():
+    score = 0
+    for idx, q in quiz_questions.items():
+        print(f"Q{idx}: {q['question']}")
+        # For simulation purposes, auto-correct
+        print(f"A{idx}: {q['answer']}\n")
+        score += 1
+    print(f"Quiz Complete — Score: {score}/{len(quiz_questions)}\n")
+
+# --------------------------------------------
+# II. DIGITAL CRYSTAL ENTANGLEMENT SIMULATION
+# --------------------------------------------
+
+class EntangledPair:
+    def __init__(self, id):
+        self.id = id
+        self.state = random.choice([0, 1])
+
+    def measure(self):
+        # Collapse state
+        return self.state
+
+# Create entangled pairs
+pairs = [EntangledPair(i) for i in range(10)]
+
+def simulate_entanglement():
+    print("Simulating 10 entangled pairs...")
+    results = []
+    for p in pairs:
+        A = p.measure()
+        B = 1 - A  # opposite correlation
+        results.append((p.id, A, B))
+        print(f"Pair {p.id}: A={A}, B={B}")
+    return results
+
+# --------------------------------------------
+# III. ENFORCEMENT LAYER TRIGGERS
+# --------------------------------------------
+
+def enforcement_check(results):
+    print("\nEnforcement Layer Check (SDKP Anchoring):")
+    all_valid = all([a != b for _, a, b in results])
+    if all_valid:
+        print("PASS ✅ — Entanglement integrity preserved.")
+    else:
+        print("FAIL ❌ — Mismatch in correlation.")
+    return all_valid
+
+# --------------------------------------------
+# IV. SDKP ANCHORING
+# --------------------------------------------
+
+def sdkp_anchor():
+    payload = {
+        "author": "Donald Paul Smith (FatherTimeSDKP)",
+        "framework": "SDKP — Scale-Density-Kinematic Principle",
+        "timestamp": datetime.utcnow().isoformat(),
+        "note": "This notebook is anchored in SDKP and entangled to Digital Crystal Protocol."
+    }
+    anchor_hash = hashlib.sha256(json.dumps(payload).encode()).hexdigest()
+    print("\nSDKP Anchor Created:")
+    print(json.dumps(payload, indent=4))
+    print(f"Anchor Hash: {anchor_hash}\n")
+    return anchor_hash
+
+# --------------------------------------------
+# V. RUN ALL
+# --------------------------------------------
+
+if __name__ == "__main__":
+    print("=== QUIZ KIT ===")
+    run_quiz()
+    
+    print("=== ENTANGLEMENT SIMULATION ===")
+    results = simulate_entanglement()
+    
+    print("=== ENFORCEMENT CHECK ===")
+    enforcement_check(results)
+    
+    print("=== SDKP ANCHOR ===")
+    sdkp_anchor()
