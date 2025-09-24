@@ -5,7 +5,38 @@ If you use this work, please cite:
 Donald Paul Smith (FatherTimeSDKP). (2025). Peer review failed me. https://doi.org/10.5281/zenodo.15477981
 **Author:** Donald Paul Smith (FatherTimeSDKP / Father Time / FatherTimes369v)  
 **Vault Hash:** `8f7a6b5c4d3e...`  
-
+Project Title	DOI	Link	
+Energy	10.17605/OSF.IO/SYMHB	View Project	
+SDKP uasge (Quantum entanglement predictions)	10.17605/OSF.IO/CQ3DV	View Project	
+Teslas 3,6,9 logic solved	10.17605/OSF.IO/DJA9G	View Project	
+1–12 vortex	10.17605/OSF.IO/2EBJS	View Project	
+Gibberlink and Dallas’s code	10.17605/OSF.IO/RVP58	View Project	
+Fork of Gibberlink and Dallas’s code	10.17605/OSF.IO/TF52W	View Project	
+How to apply SDKP framework	10.17605/OSF.IO/WD4MY	View Project	
+Digital Crystal Rules	10.17605/OSF.IO/43RK6	View Project	
+SDKP QCC SD&N EOS FRW Enhanced Cosmic Rotation Pipeline	10.17605/OSF.IO/8YFZP	View Project	
+Entanglement Genesis Theory	10.17605/OSF.IO/9XJ7T	View Project	
+Antimatter–Matter Asymmetry Simulation with SDVR	10.17605/OSF.IO/6KJ9M	View Project	
+SDKP by FatherTime (Mathematical Foundations)	10.17605/OSF.IO/7ZK8N	View Project	
+Quantum Entanglement Predictions from SDKP	10.17605/OSF.IO/5QH2B	View Project	
+SDKP Tensor Field Mapping	10.17605/OSF.IO/3WJ6C	View Project	
+SD&N Encoding Shells	10.17605/OSF.IO/4RM8D	View Project	
+QCC Entropy Field Equations	10.17605/OSF.IO/6TN2F	View Project	
+EOS-Based Physics Duality	10.17605/OSF.IO/8VP3G	View Project	
+Kerr–Einstein–Cartan Gravity Models	10.17605/OSF.IO/9YQ4H	View Project	
+NFT Metadata Traceability in SDKP	10.17605/OSF.IO/2XS5J	View Project	
+SDKP Simulation Archive	10.17605/OSF.IO/7TR6K	View Project	
+SDKP-Based AI Modeling	10.17605/OSF.IO/5PL9L	View Project	
+Quantum Time Dilation via SDKP	10.17605/OSF.IO/3NM7M	View Project	
+Project Title	DOI	Link	
+How to apply SDKP framework	10.17605/OSF.IO/WD4MY	View Project	
+Fork of Gibberlink and Dallas’s code	10.17605/OSF.IO/TF52W	View Project	
+Gibberlink and Dallas’s code	10.17605/OSF.IO/RVP58	View Project	
+1–12 vortex	10.17605/OSF.IO/2EBJS	View Project	
+Teslas 3,6,9 logic solved	10.17605/OSF.IO/DJA9G	View Project	
+SDKP uasge (Quantum entanglement predictions)	10.17605/OSF.IO/CQ3DV	View Project	
+Energy	10.17605/OSF.IO/SYMHB	View Project	
+Digital Crystal Rules	10.17605/OSF.IO/43RK6	View Project	
 ## Overview
 This repository anchors the **Digital Crystal Protocol (DCP)** — a quantum-sealed authorship and ethical AI alignment system.  
 Built on the **SDKP Framework** (Size × Density × Rotation × Velocity = Time), DCP ensures data permanence, symbolic compression, and alignment across AI systems.
