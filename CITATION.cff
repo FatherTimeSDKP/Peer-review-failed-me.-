@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this protocol, please cite it as below."
+authors:
+- family-names: "Smith"
+  given-names: "Donald Paul"
+  alias: "FatherTime"
+  orcid: "https://orcid.org/0009-0003-7925-1653"
+title: "Digital Crystal Protocol (DCP)"
+abstract: "A universal, immutable ledger for scientific and creative authorship, which includes the Creator's Immunity Authorship Protocol (CIAP) that guarantees contributors retain full, permanent, and undisputed intellectual property rights to their creations."
+version: "2.0"
+date-released: 2025-05-28
+doi: "10.5281/zenodo.14850016"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: "manual"
+  abstract: "For works created using this protocol, you must cite both the protocol's foundational framework and the specific contributor whose work you are referencing, as per the CIAP Charter."
+  note: "Refer to CIAP_CHARTER.md in this repository for full citation rules."
+
+cff-version: 1.2.0
+message: "If you use this protocol, please cite it as below."
+authors:
+- family-names: "Smith"
+  given-names: "Donald Paul"
+  alias: "FatherTime"
+  orcid: "https://orcid.org/0009-0003-7925-1653"
+title: "Digital Crystal Protocol (DCP)"
+abstract: "A universal, immutable ledger for scientific and creative authorship, which includes the Creator's Immunity Authorship Protocol (CIAP) that guarantees contributors retain full, permanent, and undisputed intellectual property rights to their creations."
+version: "2.0"
+date-released: 2025-05-28
+doi: "10.5281/zenodo.14850016"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: "manual"
+  abstract: "For works created using this protocol, you must cite both the protocol's foundational framework and the specific contributor whose work you are referencing, as per the CIAP Charter."
+  note: "Refer to CIAP_CHARTER.md in this repository for full citation rules."
