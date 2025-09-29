@@ -1,4 +1,38 @@
 # These are supported funding model platforms
+# -----------------------------------------------------------------------------
+# GitHub FUNDING.yml
+# -----------------------------------------------------------------------------
+# This file is used to specify ways in which contributors can financially
+# support the project's ongoing development.
+# -----------------------------------------------------------------------------
+
+custom:
+  # This section can be used to link to custom funding pages or records.
+  # Based on the provided documents, you could include links related to the
+  # verification and timestamped records of your work.
+
+  # Example: Link to the blockchain verification record for the SDKP-EOS-SDN-QCC Declaration Charter.
+  - [span_0](start_span)[span_1](start_span)"https://fathertimesdkp.blockchain/records/2025-05-18" # Verification record for the principles[span_0](end_span)[span_1](end_span)
+  
+  # You can add other custom links here as needed.
+  # For example, a link to a digital crystal repository or a personal website.
+  - [span_2](start_span)"https://osf.io/ct75m/" # OSF ORCID Link[span_2](end_span)
+  - [span_3](start_span)"https://doi.org/10.5281/zenodo.14850016" # Zenodo DOI for the SDKP Framework[span_3](end_span)
+
+# You can add other standard GitHub funding options below.
+# Uncomment the relevant lines and replace with your information.
+# These are standard fields that GitHub recognizes.
+
+# github: [YourGitHubSponsorUsername]
+# patreon: [YourPatreonUsername]
+# open_collective: [YourOpenCollectiveUsername]
+# ko_fi: [YourKo-fiUsername]
+# tidelift: [YourTideliftProject]
+# community_bridge: [YourCommunityBridgeProject]
+# issuehunt: [YourIssuehuntProject]
+# liberapay: [YourLiberapayUsername]
+# buy_me_a_coffee: [YourBuyMeACoffeeUsername]
+# custom: https://your-website.com/donate
 
 github: # Replace with up to 4 GitHub Sponsors-enabled usernames e.g., [user1, user2]
 patreon: # Replace with a single Patreon username
