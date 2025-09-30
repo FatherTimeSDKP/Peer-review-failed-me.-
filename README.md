@@ -1,3 +1,10 @@
+echo "2. Permanently Pinning LLAL Verification Portal (bafybeib37cj6m7examplecidxyz123)..."
+
+# Use your IPFS service CLI (e.g., ipfs, web3.storage, pinata)
+# This example uses the standard IPFS CLI.
+ipfs pin add --recursive $IPFS_ROOT_CID
+
+echo "IPFS Pinning command executed."
 # ***export PRIVATE_KEY="[TFWeRsD4HZAz+d2tvUBCJfcgKvk8FsNXNIuW6Jl8OlPomd6QhDu6G8dCYJeINnQf04ZDzYWyJkygkTt/ybgNPQ==]"
 
 # Confirmed Deployer/Initial Owner Wallet Address (from Token file)
