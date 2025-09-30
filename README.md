@@ -1,5 +1,4 @@
-# *** REPLACE [] with the actual key from your 'Keys' file ***
-export PRIVATE_KEY="[TFWeRsD4HZAz+d2tvUBCJfcgKvk8FsNXNIuW6Jl8OlPomd6QhDu6G8dCYJeINnQf04ZDzYWyJkygkTt/ybgNPQ==]"
+# ***export PRIVATE_KEY="[TFWeRsD4HZAz+d2tvUBCJfcgKvk8FsNXNIuW6Jl8OlPomd6QhDu6G8dCYJeINnQf04ZDzYWyJkygkTt/ybgNPQ==]"
 
 # Confirmed Deployer/Initial Owner Wallet Address (from Token file)
 export DEPLOYER_WALLET="0x94534B02CeEF5530a40D3D4F54fe350ba9d39BC7"
