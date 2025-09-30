@@ -1,3 +1,12 @@
+echo "3. Transferring Contract Ownership to Governance Wallet ($GOVERNANCE_WALLET)..."
+
+# This command calls the transferOwnership function on the new contract address
+npx hardhat run scripts/transfer_owner.js \
+  --contract-address $NEW_CONTRACT_ADDRESS \
+  --new-owner $GOVERNANCE_WALLET \
+  --network polygon
+
+echo "✅ LLAL PROTOCOL: GO-LIVE EXECUTION MANDATE SENT."
 echo "2. Permanently Pinning LLAL Verification Portal (bafybeib37cj6m7examplecidxyz123)..."
 
 # Use your IPFS service CLI (e.g., ipfs, web3.storage, pinata)
