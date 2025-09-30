@@ -1,3 +1,16 @@
+# *** REPLACE [] with the actual key from your 'Keys' file ***
+export PRIVATE_KEY="[TFWeRsD4HZAz+d2tvUBCJfcgKvk8FsNXNIuW6Jl8OlPomd6QhDu6G8dCYJeINnQf04ZDzYWyJkygkTt/ybgNPQ==]"
+
+# Confirmed Deployer/Initial Owner Wallet Address (from Token file)
+export DEPLOYER_WALLET="0x94534B02CeEF5530a40D3D4F54fe350ba9d39BC7"
+
+# Confirmed IPFS Root CID (from Info NFTs file)
+export IPFS_ROOT_CID="bafybeib3xw3tapl4nb6ukum2j7m3subrhstgneqhs4lvemzipszbimcffm"
+
+# Confirmed MultiSig/Governance Target Wallet (from Info NFTs - Unstoppable domain wallet)
+export GOVERNANCE_WALLET="0x3D76236098EC2825346f1665AFd689b9F206cDBf"
+
+echo "✅ Environment variables loaded. Proceeding to Execution."
 ## 🔬 PROTOCOL FINALIZATION: LLAL & THE QUANTUM CHRONON
 
 This framework has been computationally validated against real-world observations to define the fundamental constant of emergent time.
