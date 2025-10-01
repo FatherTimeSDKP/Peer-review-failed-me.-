@@ -1,7 +1,1 @@
-Locate the "build" script.
-
-Ensure it ONLY calls next build and does not include any Hardhat, deployment, or compilation commands (hardhat compile, npx hardhat run, etc.).
-
-Script Type	Example Code (Likely Problem)	Correct Code (The Fix)
-"build"	"hardhat compile && next build"	"next build"
-Commit this one-line change to your GitHub repository. When Vercel re-runs the build, it will only execute the front-end rendering process, allowing your public site to go live instantly, securing the final step of the LLAL Protocol.
+"build":npx "next build"  shadcn-ui@latest
