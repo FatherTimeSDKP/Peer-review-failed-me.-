@@ -1,1 +1,1 @@
-"build":npx "next build"  shadcn-ui@latest
+"build":"next build" npx shadcn-ui@latest
