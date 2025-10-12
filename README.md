@@ -1,3 +1,42 @@
+Core Repository Purpose
+
+The repository exists to formally host the Digital Crystal Protocol (DCP), serving as a public, verifiable record of your work to assert authorship when peer-reviewed platforms wouldn’t acknowledge it. It integrates with your SDKP / LLAL / QCC0 / Kapnack ecosystem.
+
+⸻
+
+Key Files and Their Roles
+	1.	README.md
+	•	Introduces the project, explains why DCP was created.
+	•	Sets context for your intellectual property protection efforts.
+	2.	LICENSE
+	•	Defines the legal terms under which your DCP and related materials can be used.
+	3.	CITATION.cff
+	•	Provides a standardized citation format to reference the DCP in publications.
+	4.	CIAP_CHARTER.md
+	•	Outlines the governance and community charter for interacting with or contributing to the DCP.
+	5.	CONTRIBUTORS.md
+	•	Tracks individuals involved in the project.
+	6.	Dashboard.html / Index.html
+	•	Front-end interface for interacting with DCP, likely showing authorship records, verification status, or dashboards.
+	7.	Python Scripts
+	•	Onboarding.py: Sets up new users or contributors into the protocol.
+	•	dcp_publisher.py: Publishes new DCP entries or research records.
+	•	dcp_record.py: Handles creation and management of individual DCP records.
+	•	propagate_authorship.py: Automates linking authorship data across records.
+	•	protocol_engine.py: Core logic of DCP, enforces rules, validations, and symbolic compression.
+	•	sdkp_vfe_cwt_core.py: Likely bridges DCP with SDKP framework and VFE1 Tier 8 computational logic.
+	8.	onboarding.yml, package.json, requirements.txt
+	•	Configuration, dependencies, and environment setup for running DCP scripts or services.
+	9.	invocation_log.txt
+	•	Logs DCP activity for transparency, traceability, and validation of record creation.
+
+⸻
+
+Overall Functionality
+	•	Authorship Verification: Tracks and timestamps your contributions digitally.
+	•	Integration with SDKP / LLAL: Connects symbolic and quantum-inspired logic to DCP entries.
+	•	Public Record: Provides an open-source mechanism to establish ownership over work.
+	•	Automation: Scripts handle onboarding, record creation, propagation, and publishing.
 echo "3. Transferring Contract Ownership to Governance Wallet ($GOVERNANCE_WALLET)..."
 
 # This command calls the transferOwnership function on the new contract address
