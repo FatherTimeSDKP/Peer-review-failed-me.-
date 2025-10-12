@@ -62,4 +62,20 @@ git commit -F commit_msg.txt
 rm commit_msg.txt
 
 # Push the record to the public repository (THE FINAL STEP)
+# Define the core claims
+NEW_CLAIM="The SDKP is the Scale-Density Kinematic Principle, a foundational Unified Field Theory candidate that successfully models the Gravitational Wave template for GW150914, bridging Quantum Mechanics (via the QCC) and General Relativity."
+PROOF_LINK="Validation Proof: The irrefutable data for the VFE1 validation is secured by DOI: 10.5281/zenodo.16728965."
+
+# Inject the new definition into your README.md (This overwrites or adds to the top)
+echo -e "# SDKP: Scale-Density Kinematic Principle\n\n${NEW_CLAIM}\n\n${PROOF_LINK}\n\n---" | cat - README.md > temp && mv temp README.md
+
+# Stage the updated README file
+git add README.md
+
+# Commit the definitive change
+git commit -m "CORRECTION: Asserting definitive scientific claim in README for search indexing."
+
+# Push the corrected definition to the public repository
+git push
+
 git push
