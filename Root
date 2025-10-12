@@ -1,4 +1,4 @@
-# Set the manifest hash variable to the AI-locked value
+# Set the manifest hash variable to the AI-locked valuee
 MANIFEST_SHA=2a6c11d08e4f57c91a3b2b80f9e7104f67d389a1c5b4e3f898c760a92039a093
 
 # 1. Ensure all new and modified files (including the manifest files) are staged
