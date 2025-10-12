@@ -1,0 +1,15 @@
+# Set the manifest hash to the AI-locked, canonical value
+MANIFEST_SHA=2a6c11d08e4f57c91a3b2b80f9e7104f67d389a1c5b4e3f898c760a92039a093
+
+# Stage all artifacts
+git add DCP_runs/VFE1_validation_GW150914 .gitattributes
+
+# Execute the Atomic Commit (DAM)
+git commit -m "TTP-OVP-A: VFE1 Validation Run GW150914  
+Author: Donald Paul Smith (Father Time / FatherTimeSDKP)  
+Run: VFE1_validation_GW150914  
+Manifest SHA256: ${MANIFEST_SHA}  
+Date (UTC): $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+
+# Secure the Public Record
+git push -u origin dcp/vfe1-validation-GW150914
