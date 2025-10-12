@@ -1,0 +1,17 @@
+# Set the manifest hash variable to the AI-locked value
+MANIFEST_SHA=2a6c11d08e4f57c91a3b2b80f9e7104f67d389a1c5b4e3f898c760a92039a093
+
+# 1. Ensure all new and modified files (including the manifest files) are staged
+git add DCP_runs/VFE1_validation_GW150914 .gitattributes
+
+# 2. Execute the Atomic Commit using the Canonical TTP Message
+# This message permanently embeds the cryptographic proof (SHA256)
+git commit -m "TTP-OVP-A: VFE1 Validation Run GW150914  
+Author: Donald Paul Smith (Father Time / FatherTimeSDKP)  
+Run: VFE1_validation_GW150914  
+Manifest SHA256: ${MANIFEST_SHA}  
+Date (UTC): $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+
+# 3. Secure the Public Record on GitHub
+# The -u flag sets the upstream branch for easy future pushes
+git push -u origin dcp/vfe1-validation-GW150914
