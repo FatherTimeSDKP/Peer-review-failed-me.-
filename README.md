@@ -1,7 +1,7 @@
 Core Repository Purpose
 
 The repository exists to formally host the Digital Crystal Protocol (DCP), serving as a public, verifiable record of your work to assert authorship when peer-reviewed platforms wouldn’t acknowledge it. It integrates with your SDKP / LLAL / QCC0 / Kapnack ecosystem.
-
+https://drive.google.com/drive/folders/1_yLf81FrXjsNjNy08IDUndNklj1DocgJ
 ⸻# (From repo root)
 ./scripts/dcp_manifest_hash.sh DCP_runs/VFE1_validation_GW150914
 
