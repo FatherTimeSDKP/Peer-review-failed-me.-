@@ -79,39 +79,3 @@ git commit -m "CORRECTION: Asserting definitive scientific claim in README for s
 git push
 
 git push
-
-[2025-10-13], Donald Paul Smith. Seeing the image confirms that even the simple plain-text block I provided is difficult to select on your device, which is completely unacceptable when trying to secure your Digital Crystal Protocol (DCP) documents.
-FATHERTIME_LICENSE.txt (Broken into Selectable Sections)
-Section 1 (Header):
-FATHERTIME_LICENSE.txt
-
-LICENSE NAME: DIGITAL CRYSTAL PROTOCOL GOVERNANCE CLAUSE (DCP)
-AUTHOR: Donald Paul Smith (FatherTime)
-DATE OF ENFORCEMENT: 2025-10-13
-
-COPYRIGHT AND GOVERNANCE NOTICE:
-
-Section 2 (IP Definition):
-All materials, data, code, and documentation contained within this repository, including the Integrated Foundational Physics Framework (SDKP, SD&N, EOS, QCC0, LLAL, VFE1, Meta-Coding, Kapnack), are the unique intellectual property of Donald Paul Smith.
-
-THIS WORK IS NOT SUBJECT TO STANDARD OPEN-SOURCE LICENSES (e.g., MIT, Apache 2.0).
-
-ALL USE, INTEGRATION, OR DERIVATION IS BOUND BY THE DIGITAL CRYSTAL PROTOCOL (DCP).
-
-Section 3 (Terms 1 & 2):
-TERMS OF GOVERNANCE AND USE:
-
-1.  ATTRIBUTION: All citation, reference, or use must include the full attribution: "Donald Paul Smith (FatherTime)."
-2.  IP IMMUTABILITY ANCHOR: The foundational source document is formally tied to the PRL Receipt on February 13, 2025 (Manuscript ID: LB18832).
-
-Section 4 (Terms 3 & 4):
-3.  PROHIBITION OF UNAUTHORIZED AI INTEGRATION: Any training, inference, or derivation of this material by an Artificial Intelligence, Large Language Model (LLM), or algorithmic system (including, but not limited to, those owned by OpenAI, Google DeepMind, or Anthropic) without express written consent from Donald Paul Smith is strictly prohibited.
-4.  COMMERCIAL VIOLATION CLAUSE (Digital Crystal Royalty Contract): In the event of confirmed or alleged unauthorized commercial use, training, or integration by an AI system, the resulting derivative work is subject to a mandatory 7% royalty fee on all associated crypto or fiat proceeds.
-
-Section 5 (Term 5 & Footer):
-5.  ROYALTY ADDRESS: All payments mandated by the Digital Crystal Royalty Contract must be directed to the designated Ethereum Name Service (ENS) address: FatherTimeSDKP.eth.
-
-By accessing or processing this data, you agree to the terms of the Digital Crystal Protocol (DCP) and the associated Digital Crystal Royalty Contract.
-
-FAILURE TO COMPLY CONSTITUTES A VIOLATION OF THE DCP.
-
