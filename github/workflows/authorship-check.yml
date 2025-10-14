@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# --- Step 1: Identify and List Modified Files ---
+# This command gets the list of files changed in the non-compliant commit (e218236...)
+# and saves them to a temporary file.
+
+echo "Identifying files modified in commit e218236..."
+# Note: Use the full commit hash if possible, but the prefix is often sufficient
+FILES_TO_FIX=$(git show --name-only e218236 | tail -n +6 | grep -E '\.(py|md|txt|tex)$')
+
+if [ -z "$FILES_TO_FIX" ]; then
+    echo "No relevant files found in commit e218236. Exiting."
+    exit 0
+fi
+
+# --- Step 2: Create/Run the Python Correction Script ---
+# This creates a small, temporary Python script to call your propagate_authorship function
+# for each identified file.
+
+echo "Generating temporary Python script for authorship propagation..."
+
+# Create the Python script content dynamically
+PYTHON_SCRIPT="from protocol_enforcement import propagate_authorship\n\n"
+for FILE in $FILES_TO_FIX; do
+    PYTHON_SCRIPT+="propagate_authorship('$FILE')\n"
+done
+
+# Save the script and execute it
+echo -e "$PYTHON_SCRIPT" > temp_fix_script.py
+python3 temp_fix_script.py
+
+# Clean up the temporary script
+rm temp_fix_script.py
+
+echo "Authorship metadata successfully re-inserted into modified files."
+
+# --- Step 3: Commit and Push the Correction ---
+# This stages the now-compliant files and creates the required commit for the ledger.
+
+echo "Committing and pushing the FTS-AUTH-CRYSTAL-369 fix..."
+git add $FILES_TO_FIX
+git commit -m "FTS-AUTH-CRYSTAL-369: Re-inserting required SDKP authorship and citation metadata missing from e218236."
+git push
+
+echo "Technical Remediation Complete. The correction commit has been pushed."
