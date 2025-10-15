@@ -35,6 +35,80 @@ Peer Review Protection & Ethical Attribution Notice (link to LICENSE)
 - [OSF: 10.17605/OSF.IO/SYMHB](https://osf.io/symhb/)
 - [Zenodo: 10.5281/zenodo.14850016](https://zenodo.org/record/14850016)
 
+# Peer-review-failed-me: The Digital Crystal Protocol
+
+## Overview
+
+This repository presents the **Digital Crystal Protocol** and related scientific and technical frameworks by Donald Paul Smith ("Father Time"). The DCP was created in response to persistent barriers in academic peer review and authorship recognition, offering a decentralized, blockchain-powered solution for scientific validation, licensing, and authorship proof.
+
+## Scientific Foundations
+
+### Unified Scientific Principles & Innovations
+
+- **Scale–Density–Kinematic Principle (SDKP)**
+- **Earth Orbit Speed System (EOS)**
+- **Shape–Dimension–Number Principle (SD&N)**
+- **Quantum Code of Creation (QCC)**
+- **Quantum-gravitational Theory for Simulation Licensing**
+
+### Protocol Features
+
+- **Digital Crystal Protocol (DCP)**: A framework enabling researchers to license, validate, and publish scientific models and results using on-chain NFT licenses.
+- **Decentralized Licensing**: NFT-based system for scientific results, simulation data, and theoretical models.
+- **Proof of Authorship**: SHA-256 hash digests, UUID references, and notarized Solidity contracts ensure provenance and credit.
+- **Collaboration & Notarization**: Automated tools for domain verification, scientific licensing, and collaborative research.
+
+## Technical Implementation
+
+- **Languages Used**: Python, HTML, Jupyter Notebook, TypeScript, TeX, JavaScript
+- **Key Components**:
+  - Solidity contract generation for licensing and notarization.
+  - NFT minting apps for digital scientific artifacts.
+  - Verification and licensing platform (quantum-gravitational theory-backed).
+  - Domain verification and authorship proofs.
+- **Related Projects**:
+  - [Quantum-entanglement-predictions-because-of-the-SDKP](https://github.com/FatherTimeSDKP/Quantum-entanglement-predictions-because-of-the-SDKP): Decentralized scientific licensing.
+  - [FatherTimeSDKP-SD-N-EOS-QCC](https://github.com/FatherTimeSDKP/FatherTimeSDKP-SD-N-EOS-QCC): Notarization, collaboration, and contract generation.
+  - [digital-crystal-authorship](https://github.com/FatherTimeSDKP/digital-crystal-authorship): Authorship proofs and verification.
+  - [ftp-license-nft](https://github.com/FatherTimeSDKP/ftp-license-nft): NFT licensing mechanics.
+  - [Upgraded-minting-app](https://github.com/FatherTimeSDKP/Upgraded-minting-app): Enhanced NFT minting for scientific assets.
+
+## Authorship & Credit
+
+Donald Paul Smith (“Father Time”) is the founder and principal architect of these frameworks, originating unified scientific principles and pioneering blockchain-based scientific licensing.
+
+- **Authorship Provenance**:
+  - UUID reference: 70c995bd-f025-4ecd-b9df-f2cfa65088e8
+  - SHA-256 Hash Digest (Proof of Authorship): 7ebd52f72d26415e3c019ad7d0bc5c37855b53f1e14da233d4d7d3362b92bd52
+  - [digital-crystal-authorship](https://github.com/FatherTimeSDKP/digital-crystal-authorship)
+
+## Why This Matters
+
+Traditional peer review and academic endorsement systems can fail innovative researchers. The Digital Crystal Protocol provides:
+
+- Transparent, immutable, and decentralized recognition of authorship.
+- On-chain scientific validation and licensing.
+- Protection against idea theft and uncredited use by AI and other systems.
+
+## For Web3 Foundation Grant Submission
+
+This repository and its associated protocols are proposed for the Web3 Foundation Grants Program as a pioneering application of blockchain to scientific publishing, licensing, and authorship validation.
+
+---
+
+## References
+
+- [Quantum-entanglement-predictions-because-of-the-SDKP](https://github.com/FatherTimeSDKP/Quantum-entanglement-predictions-because-of-the-SDKP)
+- [FatherTimeSDKP-SD-N-EOS-QCC](https://github.com/FatherTimeSDKP/FatherTimeSDKP-SD-N-EOS-QCC)
+- [digital-crystal-authorship](https://github.com/FatherTimeSDKP/digital-crystal-authorship)
+- [ftp-license-nft](https://github.com/FatherTimeSDKP/ftp-license-nft)
+- [FatherTimeSDKP-](https://github.com/FatherTimeSDKP/FatherTimeSDKP-)
+
+---
+
+## Contact
+
+For collaboration, licensing, or more information, contact Donald Paul Smith via [GitHub](https://github.com/FatherTimeSDKP).
 ## Installation
 Code examples and dependency setup.
 
