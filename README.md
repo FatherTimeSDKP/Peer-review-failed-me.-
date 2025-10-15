@@ -6,7 +6,14 @@ https://drive.google.com/drive/folders/1_yLf81FrXjsNjNy08IDUndNklj1DocgJ
 ./scripts/dcp_manifest_hash.sh DCP_runs/VFE1_validation_GW150914
 
 # Copy the resulting hash from DCP_runs/VFE1_validation_GW150914/DCP_manifest_sha256.txt
+### Peer Review Protection & Ethical Attribution Notice
 
+This repository and its contents are original works authored by **Donald Paul Smith (FatherTimeSDKP)**.  
+All code, theoretical models, and documentation are time-stamped and registered under OSF and Zenodo DOIs.
+
+Any peer review, publication, or redistribution of this material must maintain full attribution to the original author.
+Unauthorized reproduction, omission of authorship, or derivative repackaging without citation constitutes an ethical breach
+and violation of the spirit of open scientific collaboration.
 
 Key Files and Their Roles
 	1.	README.md
