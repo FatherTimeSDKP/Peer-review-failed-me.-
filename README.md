@@ -23,7 +23,10 @@ This repository presents the reference implementation of the DCP, associated SDK
 - LLAL (Loop Learning for Artificial Life)
 - QCC0 (Quantum Computerization Consciousness Zero)
 - Kapnack Compression Engine
-
+SD&N (shape, dimension, and number)
+Amiyah Rose Smith law (extend general, special relativity in time  dilation
+SDVR ( size density velocity rotation)
+VFE1 (vibrational field equation one)
 ## Authorship Protection
 SHA-256 Ledger Hash: `<hash>`
 Peer Review Protection & Ethical Attribution Notice (link to LICENSE)
