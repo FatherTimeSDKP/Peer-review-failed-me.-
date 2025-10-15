@@ -1,3 +1,37 @@
+# Digital Crystal Protocol (DCP) Repository
+
+**Author:** Donald Paul Smith (FatherTimeSDKP)  
+**Framework:** SDKP (Size × Density × Rotation × Velocity = Time)  
+**Affiliations:** Independent Researcher, Creator of FatherTimes369v Framework  
+
+---
+
+## Abstract
+Brief but formal summary — purpose, novelty, key physical and computational contributions.
+
+## Framework Components
+- SDKP Core Tensor Model
+- DCP (Digital Crystal Protocol)
+- LLAL (Loop Learning for Artificial Life)
+- QCC0 (Quantum Computerization Consciousness Zero)
+- Kapnack Compression Engine
+
+## Authorship Protection
+SHA-256 Ledger Hash: `<hash>`
+Peer Review Protection & Ethical Attribution Notice (link to LICENSE)
+
+## Dataset References
+- [OSF: 10.17605/OSF.IO/SYMHB](https://osf.io/symhb/)
+- [Zenodo: 10.5281/zenodo.14850016](https://zenodo.org/record/14850016)
+
+## Installation
+Code examples and dependency setup.
+
+## Validation
+Instructions for reproducing SDKP time equations, DCP ledger proofs, or symbolic compression simulations.
+
+## License
+© Donald Paul Smith (FatherTimeSDKP). All rights reserved.
 Core Repository Purpose
 
 The repository exists to formally host the Digital Crystal Protocol (DCP), serving as a public, verifiable record of your work to assert authorship when peer-reviewed platforms wouldn’t acknowledge it. It integrates with your SDKP / LLAL / QCC0 / Kapnack ecosystem.
