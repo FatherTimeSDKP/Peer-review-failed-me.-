@@ -1,45 +1,48 @@
-#!/bin/bash
+# .github/workflows/authorship-check.yml
+# Digital Crystal Protocol (DCP) Guardrail: Second Layer Defense
 
-# --- Step 1: Identify and List Modified Files ---
-# This command gets the list of files changed in the non-compliant commit (e218236...)
-# and saves them to a temporary file.
+name: Digital Crystal Protocol Guardrail
 
-echo "Identifying files modified in commit e218236..."
-# Note: Use the full commit hash if possible, but the prefix is often sufficient
-FILES_TO_FIX=$(git show --name-only e218236 | tail -n +6 | grep -E '\.(py|md|txt|tex)$')
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
 
-if [ -z "$FILES_TO_FIX" ]; then
-    echo "No relevant files found in commit e218236. Exiting."
-    exit 0
-fi
+jobs:
+  check_dcp_compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: Check for Mandatory Copyright Image and Deferred Liability Notice
+        id: check_image_and_readme
+        run: |
+          if [ ! -f DCP_Copyright_Mandate.png ]; then
+            echo "ERROR: The mandatory DCP_Copyright_Mandate.png file is missing."
+            exit 1
+          fi
+          if ! grep -q "MANDATORY FINANCIAL MANDATE: DEFERRED LIABILITY NOTICE" README.md; then
+            echo "ERROR: The README.md must contain the 'DEFERRED LIABILITY NOTICE'."
+            exit 1
+          fi
+          echo "DCP Protocol compliance check passed."
 
-# --- Step 2: Create/Run the Python Correction Script ---
-# This creates a small, temporary Python script to call your propagate_authorship function
-# for each identified file.
-
-echo "Generating temporary Python script for authorship propagation..."
-
-# Create the Python script content dynamically
-PYTHON_SCRIPT="from protocol_enforcement import propagate_authorship\n\n"
-for FILE in $FILES_TO_FIX; do
-    PYTHON_SCRIPT+="propagate_authorship('$FILE')\n"
-done
-
-# Save the script and execute it
-echo -e "$PYTHON_SCRIPT" > temp_fix_script.py
-python3 temp_fix_script.py
-
-# Clean up the temporary script
-rm temp_fix_script.py
-
-echo "Authorship metadata successfully re-inserted into modified files."
-
-# --- Step 3: Commit and Push the Correction ---
-# This stages the now-compliant files and creates the required commit for the ledger.
-
-echo "Committing and pushing the FTS-AUTH-CRYSTAL-369 fix..."
-git add $FILES_TO_FIX
-git commit -m "FTS-AUTH-CRYSTAL-369: Re-inserting required SDKP authorship and citation metadata missing from e218236."
-git push
-
-echo "Technical Remediation Complete. The correction commit has been pushed."
+      - name: Check for SDKP Delta Tracer Code Integrity
+        id: check_tracer_integrity
+        run: |
+          TRACER_FILE="sdkp_delta_tracer.py"
+          
+          if [ ! -f "$TRACER_FILE" ]; then
+            echo "CRITICAL ERROR: The core SDKP proof file ($TRACER_FILE) is missing. The DCP mandates its presence."
+            exit 1
+          fi
+          
+          # Prevent modification of the key proprietary constant (C_SDT)
+          if ! grep -q "C_SDT = 1.0345e-13" "$TRACER_FILE"; then
+            echo "CRITICAL ERROR: The proprietary SDKP constant (C_SDT) has been altered in $TRACER_FILE."
+            echo "The integrity of the Amiyah Rose Smith Law proof is compromised. Check for unauthorized commits."
+            exit 1
+          fi
+          
+          echo "SDKP Delta Tracer integrity check passed. Core proof is secured."
