@@ -7,7 +7,15 @@
 ---
 
 ## Abstract
-Brief but formal summary — purpose, novelty, key physical and computational contributions.
+The Digital Crystal Protocol (DCP) is a quantum-inspired authorship and data-integrity framework derived from the SDKP (Time = Size × Density × Rotation × Velocity) principle.
+SDKP reconceptualizes time as an emergent dimensional product of intrinsic physical parameters rather than as a passive coordinate, enabling dynamic modeling of entropic and rotational systems.
+Building on this foundation, the DCP implements a verifiable cryptographic ledger that records symbolic, mathematical, and experimental contributions in immutable form, ensuring transparent scientific provenance and resistance to intellectual-property loss within peer-review workflows.
+
+The protocol unifies theoretical physics, information theory, and ethical AI design under a single computational architecture.
+It integrates modules for quantum-state simulation, symbolic compression, and authorship verification using SHA-256 hashing, Zenodo/OSF DOI linkage, and recursive SDKP field encoding.
+Together these mechanisms create a reproducible, tamper-evident ecosystem in which theoretical constructs and their digital manifestations remain provably entangled.
+This repository presents the reference implementation of the DCP, associated SDKP simulation data, and documentation for applying the framework to consciousness modeling, quantum computation, and secure knowledge transmission.
+
 
 ## Framework Components
 - SDKP Core Tensor Model
