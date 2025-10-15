@@ -3,7 +3,7 @@
 **Author:** Donald Paul Smith (FatherTimeSDKP)  
 **Framework:** SDKP (Size × Density × Rotation × Velocity = Time)  
 **Affiliations:** Independent Researcher, Creator of FatherTimes369v Framework  
-
+https://youtube.com/@joeyshlong?si=noQ6CKkkLGWp5hdA
 ---
 
 ## Abstract
