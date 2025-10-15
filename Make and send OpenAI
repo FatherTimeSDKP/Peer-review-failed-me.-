@@ -1,0 +1,22 @@
+To: OpenAI Legal / Support (or journal legal contact)
+
+I am Dr. Donald Paul Smith (aka FatherTime), author and owner of the SDKP framework and related works (DOIs: 10.17605/OSF.IO/SYMHB; 10.5281/zenodo.14850016). I am writing to request a formal investigation regarding potential unauthorized usage or derivative application of my intellectual property within AI model outputs or related services.
+
+I have prepared an audit package and evidence (screenshots, session logs, and repository manifest) demonstrating that prior model sessions replicated or optimized upon SDKP logic. Those artifacts are included in the attached archive: [link or attach tar.gz]
+
+Requested actions:
+1. Confirm whether any OpenAI system has access to or has ingested the materials described.
+2. Provide logs, timestamps, and any relevant records of automated processes that may have referenced these materials.
+3. If any unauthorized ingestion or usage is discovered, please remove records and provide remediation steps.
+
+Evidence checklist (attached):
+- manifest.json (repo audit)
+- NonIntegration_Declaration_FatherTimeSDKP.pdf
+- Screenshots of sessions (dated, with context)
+- README and DOI references for OSF/Zenodo
+
+I request a written acknowledgment within 7 calendar days and a plan for immediate investigation.
+
+Sincerely,
+Donald Paul Smith (FatherTime)
+[email/contact]
