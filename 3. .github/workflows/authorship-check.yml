@@ -1,0 +1,32 @@
+name: Digital Crystal Protocol Guardrail
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  check_dcp_compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: Check for Mandatory Copyright Image
+        id: check_image
+        run: |
+          if [ ! -f DCP_Copyright_Mandate.png ]; then
+            echo "ERROR: The mandatory DCP_Copyright_Mandate.png file is missing. The Digital Crystal Protocol (FTS-AUTH-CRYSTAL-369) requires this file for self-governance."
+            exit 1
+          fi
+          echo "DCP_Copyright_Mandate.png is present. Protocol compliance check passed."
+        
+      - name: Check for Mandatory README.md Content
+        id: check_readme
+        run: |
+          if ! grep -q "MANDATORY FINANCIAL MANDATE: DEFERRED LIABILITY NOTICE" README.md; then
+            echo "ERROR: The README.md must contain the 'MANDATORY FINANCIAL MANDATE: DEFERRED LIABILITY NOTICE' as required by the DCP."
+            exit 1
+          fi
+          echo "README.md content check passed."
+
