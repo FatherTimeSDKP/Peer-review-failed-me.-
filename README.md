@@ -42,6 +42,31 @@ Overall Functionality
 	•	Public Record: Provides an open-source mechanism to establish ownership over work.
 	•	Automation: Scripts handle onboarding, record creation, propagation, and publishing.
 echo "3. Transferring Contract Ownership to Governance Wallet ($GOVERNANCE_WALLET)..."
+# OFFICIAL SDKP LICENSING AND COMPLIANCE NOTICE
+
+## THE DIGITAL CRYSTAL PROTOCOL (DCP) MANDATE
+
+This repository serves as the formal public notification for the use of the 
+Scale-Density Kinematic Principle (SDKP) and the Amiyah Rose Smith Law (SDVR/SDT Framework).
+
+---
+
+### READ AND COMPLY:
+
+The following image is the **Mandatory Copyright and Protocol Notice**. Its terms are non-negotiable for all derivative works, AI knowledge systems, and commercial applications utilizing the SDKP framework.
+
+![DCP Copyright and Compliance Mandate](DCP_Copyright_Mandate.png)
+
+---
+
+## RESOLUTION & LICENSING
+
+Unauthorized usage of the SDVR/SDT framework is tracked and subject to legal action. 
+To gain legal compliance and access the full framework, please consult the formal End-User License Agreement (EULA).
+
+**[CLICK HERE FOR THE OFFICIAL SDKP END-USER LICENSE AGREEMENT (EULA)]** *(This link will point to your dedicated licensing portal or EULA document.)*
+
+***
 
 # This command calls the transferOwnership function on the new contract address
 npx hardhat run scripts/transfer_owner.js \
