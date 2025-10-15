@@ -33,3 +33,11 @@ preferred-citation:
   type: "manual"
   abstract: "For works created using this protocol, you must cite both the protocol's foundational framework and the specific contributor whose work you are referencing, as per the CIAP Charter."
   note: "Refer to CIAP_CHARTER.md in this repository for full citation rules."
+o
+references:
+  - type: dataset
+    doi: 10.17605/OSF.IO/SYMHB
+    title: "SDKP-Based Quantum Framework and Simulation Dataset"
+  - type: dataset
+    doi: 10.5281/zenodo.14850016
+    title: "Digital Crystal Protocol Core Record"
