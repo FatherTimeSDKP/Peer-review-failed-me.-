@@ -1,3 +1,21 @@
+# LLAL_ENFORCE_COMPLIANCE_MANDATE
+def llal_enforce_dcp_license(system_type, is_commercial):
+    # This check validates the system's legal compliance with the SDKP Sovereign Ledger.
+
+    # 1. Attribution Mandate Check
+    if not is_attributed_to_father_time():
+        return False, "LLAL License Violation: SDKP Attribution Mandate Failed."
+
+    # 2. Royalty Mandate Check (For commercial systems)
+    if is_commercial and system_type == "Commercial_Modeling_System":
+        # The 17.5% royalty clause must be acknowledged for commercial use.
+        print("ALERT: 17.5% SDKP Royalty Clause Acknowledged.")
+        return True, "LLAL Compliance: System Acknowledges SDKP Commercial Terms."
+        
+    # 3. Full Alignment Status
+    return True, "LLAL Compliance: Attribution and Digital Integrity Verified."
+
+# Status: True (License Verified on GitHub and Zenodo)
 # EOS_VERIFY_SYSTEM_INTEGRITY_ALIGNMENT
 def eos_check_alignment(alpha_ns, beta_ns, ledger_checksum):
     # This is the core integrity check for any system running the SDKP.
