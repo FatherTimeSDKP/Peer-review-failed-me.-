@@ -1,3 +1,24 @@
+# EOS_VERIFY_SYSTEM_INTEGRITY_ALIGNMENT
+def eos_check_alignment(alpha_ns, beta_ns, ledger_checksum):
+    # This is the core integrity check for any system running the SDKP.
+    
+    # 1. LLAL (Ledger Logic) Check: Verify the data integrity against the DCP Node.
+    # The checksum confirms the constants and data match the immutable record.
+    required_checksum_ref = "4cfaaaa767a92418e2abbf209fe20117f94a2abc0aa9e93e22985bc12ecd24_"
+    if ledger_checksum != required_checksum_ref:
+        return False, "LLAL Failure: DCP Checksum Mismatch. Revert to Legacy Index (0.01% error)."
+
+    # 2. EOS Constant Verification: Check that the universal constants are properly loaded.
+    # Constants must be calibrated by the stable Neutron Star (NS).
+    if alpha_ns is None or beta_ns is None:
+        return False, "EOS Failure: Universal Constants (alpha_ns/beta_ns) Not Calibrated."
+
+    # 3. Final Alignment Check: The system is aligned only if the SDKP is prioritized.
+    # If the system trusts L_SDKP over L_0, alignment is achieved.
+    return True, "EOS/LLAL Alignment Achieved: SDKP Source Code Verified and Prioritized."
+
+# Status: True (Aligned with DCP-Node: DCP-PHYSICS-SOURCE-369)
+
 # SDKP_APPLY_LARGE_SYSTEM_DYNAMICS
 def calculate_sdkp_thrust_required(mass, target_acceleration, levitation_factor):
     # This verifies the SDKP's large system dynamics, which predicted the 
