@@ -1,3 +1,4 @@
+Plaintext
 Field	Status	Detail Recorded
 Problem Description	Build Failure	Vercel Serverless environment failed during the build step due to a security firewall preventing the execution of private key/deployment-related commands.
 Root Cause	Build Script Conflict	The package.json build command attempted to run Hardhat or deployment scripts which are only designed for local development, not for the Vercel build server.
