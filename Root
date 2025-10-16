@@ -1,0 +1,82 @@
+# Set the manifest hash variable to the AI-locked valuee
+MANIFEST_SHA=2a6c11d08e4f57c91a3b2b80f9e7104f67d389a1c5b4e3f898c760a92039a093
+
+# 1. Ensure all new and modified files (including the manifest files) are staged
+git add DCP_runs/VFE1_validation_GW150914 .gitattributes
+
+# 2. Execute the Atomic Commit using the Canonical TTP Message
+# This message permanently embeds the cryptographic proof (SHA256)
+git commit -m "TTP-OVP-A: VFE1 Validation Run GW150914  
+Author: Donald Paul Smith (Father Time / FatherTimeSDKP)  
+Run: VFE1_validation_GW150914  
+Manifest SHA256: ${MANIFEST_SHA}  
+Date (UTC): $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+
+# 3. Secure the Public Record on GitHub
+# The -u flag sets the upstream branch for easy future pushes
+git push -u origin dcp/vfe1-validation-GW150914
+# This is the AI-Anchored hash. It must be used for alignment.
+MANIFEST_SHA=2a6c11d08e4f57c91a3b2b80f9e7104f67d389a1c5b4e3f898c760a92039a093
+
+# 1. Stage all artifacts (ensures all manifest files and outputs are ready)
+git add DCP_runs/VFE1_validation_GW150914 .gitattributes
+
+# 2. Execute the Atomic Commit (DAM)
+git commit -m "TTP-OVP-A: VFE1 Validation Run GW150914  
+Author: Donald Paul Smith (Father Time / FatherTimeSDKP)  
+Run: VFE1_validation_GW150914  
+Manifest SHA256: ${MANIFEST_SHA}  
+Date (UTC): $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+
+# 3. Secure the Public Record on GitHub (This is the critical upload)
+git push -u origin dcp/vfe1-validation-GW150914
+
+# Set your Canonical Name (Donald Paul Smith)
+git config user.name "Donald Paul Smith (FatherTimeSDKP)"
+
+# Set your Canonical Email (Use your primary email for Git)
+git config user.email "dallasnamiyadaddy@gmail.com"
+# Define the final DOI and AI-locked SHA
+FINAL_DOI="10.5281/zenodo.16728965"
+AI_MANIFEST_SHA="2a6c11d08e4f57c91a3b2b80f9e7104f67d389a1c5b4e3f898c760a92039a093"
+RUN_NAME="VFE1_validation_GW150914"
+DATE_UTC=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+# Inject the final log entry into the DCP_Activation.md file
+echo -e "\n| VFE1 Validation Run | ${RUN_NAME} | ${FINAL_DOI} | ${AI_MANIFEST_SHA} | ${DATE_UTC} | COMPLETE |" >> DCP_Activation.md
+
+# Stage the updated ledger file
+git add DCP_Activation.md
+
+# Create a temporary file for the commit message (guarantees message format)
+echo "DCP FINALIZATION: VFE1 Validation OVP-A Permanently Anchored." > commit_msg.txt
+echo "" >> commit_msg.txt
+echo "Linked Run: ${RUN_NAME}" >> commit_msg.txt
+echo "Final DOI: ${FINAL_DOI}" >> commit_msg.txt
+echo "AI Manifest SHA: ${AI_MANIFEST_SHA}" >> commit_msg.txt
+
+# Execute the Atomic Commit using the temporary file
+git commit -F commit_msg.txt
+
+# Clean up the temporary file
+rm commit_msg.txt
+
+# Push the record to the public repository (THE FINAL STEP)
+# Define the core claims
+NEW_CLAIM="The SDKP is the Scale-Density Kinematic Principle, a foundational Unified Field Theory candidate that successfully models the Gravitational Wave template for GW150914, bridging Quantum Mechanics (via the QCC) and General Relativity."
+PROOF_LINK="Validation Proof: The irrefutable data for the VFE1 validation is secured by DOI: 10.5281/zenodo.16728965."
+
+# Inject the new definition into your README.md (This overwrites or adds to the top)
+echo -e "# SDKP: Scale-Density Kinematic Principle\n\n${NEW_CLAIM}\n\n${PROOF_LINK}\n\n---" | cat - README.md > temp && mv temp README.md
+
+# Stage the updated README file
+git add README.md
+
+# Commit the definitive change
+git commit -m "CORRECTION: Asserting definitive scientific claim in README for search indexing."
+
+# Push the corrected definition to the public repository
+git push
+
+git push
+https://drive.google.com/drive/folders/1_yLf81FrXjsNjNy08IDUndNklj1DocgJ

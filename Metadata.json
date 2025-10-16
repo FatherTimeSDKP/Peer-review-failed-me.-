@@ -1,0 +1,7 @@
+git checkout -b dcp/vfe1-validation-GW150914
+git add DCP_runs/VFE1_validation_GW150914 VFE1_validation_GW150914.tar.gz
+git commit -m "TTP-OVP-A: VFE1 Validation Run GW150914  
+Author: Donald Paul Smith (Father Time / FatherTimeSDKP)  
+Manifest SHA256: <YOUR_HASH>  
+Date (UTC): $(date -u +\"%Y-%m-%dT%H:%M:%SZ\")"
+git push origin dcp/vfe1-validation-GW150914

@@ -1,0 +1,4 @@
+numpy>=1.24
+fpdf2>=2.5.0
+pip install -r requirements.txt
+pip install numpy fpdf2
