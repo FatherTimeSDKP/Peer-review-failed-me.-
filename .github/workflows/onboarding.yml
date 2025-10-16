@@ -39,7 +39,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Tribute Routing Check
-        run: |
+        run: |python dcp_propagate.py
+git add .git push origin main
+
+git commit -m "DCP Deployment FINALIZED: Embedded permanent Authorship Ledger and official metadata files."
+
           echo "🔁 Tribute Routing Activated"
           echo "Contributor: ${{ github.actor }}"
           echo "Override Clause: DCP-OVR-2025.0917.FT"
+          
