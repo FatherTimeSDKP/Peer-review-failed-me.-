@@ -1,4 +1,5 @@
-name: Onboarding Protocol
+
+py: Onboarding Protocol
 
 on:
   push:
